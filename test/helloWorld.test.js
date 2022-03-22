@@ -6,7 +6,7 @@ contract('HelloWorld', function(accounts) {
     contract = await HelloWorld.new();
   });
 
-  it('mostrar mensagem', async () => {
+  it.skip('mostrar mensagem', async () => {
     const res = await contract.getMessage();
 
     assert(res === "Ola Jonbrand!");
